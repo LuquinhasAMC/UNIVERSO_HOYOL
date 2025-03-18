@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sigmar&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <script defer src="script.js"></script>
+    <title>UNIVERSO HOYOL</title>
+</head>
+<body>
+    <div id="principalBar">
+        <div id="menu">
+            <button class="btMenu" onclick="fecharM()">
+                <svg class="icons" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 66.91 122.88" style="enable-background:new 0 0 66.91 122.88" xml:space="preserve"><g><path fill="currentColor" d="M64.96,111.2c2.65,2.73,2.59,7.08-0.13,9.73c-2.73,2.65-7.08,2.59-9.73-0.14L1.97,66.01l4.93-4.8l-4.95,4.8 c-2.65-2.74-2.59-7.1,0.15-9.76c0.08-0.08,0.16-0.15,0.24-0.22L55.1,2.09c2.65-2.73,7-2.79,9.73-0.14 c2.73,2.65,2.78,7.01,0.13,9.73L16.5,61.23L64.96,111.2L64.96,111.2L64.96,111.2z"/></g></svg>
+            </button>
+            <h1 id="MT" class="title">Menu</h1>
+            <button class="btsM" onclick="navegar('inicio')">Início
+                <svg class="icons" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 113.97"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>homepage</title><path fill="currentColor" class="cls-1" d="M18.69,73.37,59.18,32.86c2.14-2.14,2.41-2.23,4.63,0l40.38,40.51V114h-30V86.55a3.38,3.38,0,0,0-3.37-3.37H52.08a3.38,3.38,0,0,0-3.37,3.37V114h-30V73.37ZM60.17.88,0,57.38l14.84,7.79,42.5-42.86c3.64-3.66,3.68-3.74,7.29-.16l43.41,43,14.84-7.79L62.62.79c-1.08-1-1.24-1.13-2.45.09Z"/></svg>
+            </button>
+            <button class="btsM" onclick="navegar('projetos')">Projetos
+                <svg class="icons" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 331.617"><path fill="currentColor" fill-rule="nonzero" d="M271.099 21.308C274.787 6.304 289.956-2.873 304.96.815c15.005 3.688 24.181 18.857 20.493 33.862l-68.491 275.632c-3.689 15.005-18.857 24.181-33.862 20.493-15.005-3.688-24.181-18.857-20.493-33.862l68.492-275.632zm-118.45 224.344c11.616 10.167 12.795 27.834 2.628 39.45-10.168 11.615-27.835 12.794-39.45 2.627L9.544 194.604C-2.071 184.437-3.25 166.77 6.918 155.155c.873-.997 1.8-1.912 2.767-2.75l106.142-93.001c11.615-10.168 29.282-8.989 39.45 2.626 10.167 11.616 8.988 29.283-2.628 39.45l-82.27 72.086 82.27 72.086zm243.524 42.077c-11.615 10.167-29.282 8.988-39.45-2.627-10.167-11.616-8.988-29.283 2.628-39.45l82.27-72.086-82.27-72.086c-11.616-10.167-12.795-27.834-2.628-39.45 10.168-11.615 27.835-12.794 39.45-2.626l106.142 93.001a28.366 28.366 0 012.767 2.75c10.168 11.615 8.989 29.282-2.626 39.449l-106.283 93.125z"/></svg>
+            </button>
+            <button class="btsM" onclick="navegar('novidades')">Novidades
+                <svg class="icons" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 113.8"><defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>loudspeake</title><path fill="currentColor" class="cls-1" d="M0,67.6c-.06-5.83,2.16-11,7.37-12.69l.13-.22a2.91,2.91,0,0,1,.6-.8,3.1,3.1,0,0,1,1.05-.5l.29-.11C34.7,44,46.09,30.07,52.64,20.61c0,9.29,2.33,21.4,6.43,33.12,4.21,12,10.29,23.71,17.71,31.76h0c-7.73-2.2-17.43-5-33.21-2.85a15.17,15.17,0,0,0-1.12,5.06,3.9,3.9,0,0,0,1,3l.24.22c1,.91,1.49,1.36,1.71,2.17a9.17,9.17,0,0,1-.13,3.22l-.09.67c-.37,2.93,1.05,3.53,2.46,4.13s2.51,1.08,3.08,2.69a.68.68,0,0,1,0,.4c-.58,3-2.5,4.64-4.43,6.29-.47.41-.95.82-1.36,1.21l-.06,0c-3.92,3.14-6.57,2.3-8.58-.22-1.58-2-2.68-5-3.7-7.81l-.44-1.22a122.88,122.88,0,0,1-4-15.09l-.34-1.5c-.87.24-1.78.51-2.73.79h0c-1.2.35-2.4.73-3.59,1.11l-.38.14a1.21,1.21,0,0,1-1.33,0C13.47,90,8.2,87,4.68,82a25,25,0,0,1-3.41-6.9A25.74,25.74,0,0,1,0,67.6ZM87.81,16.16a3,3,0,0,1-4.23-.6l-.07-.09a3.05,3.05,0,0,1,.63-4.19C89,7.69,93.84,4.07,98.7.56A3.09,3.09,0,0,1,100.92,0a3.06,3.06,0,0,1,2,1.21l0,.05a3,3,0,0,1,.52,2.23,3,3,0,0,1-1.21,2L87.81,16.16Zm15.79,57.7h0a3,3,0,0,1-2.11-.93,3,3,0,0,1-.85-2.14v-.07a3,3,0,0,1,3.07-3c5.37,0,10.83.2,16.2.3a3.07,3.07,0,0,1,3,3.1,3.09,3.09,0,0,1-.93,2.15,3,3,0,0,1-2.16.86l-16.19-.31Zm.47-15.71a3,3,0,0,1-3.25-2.78V55.3a3.07,3.07,0,0,1,2.77-3.23c5-.4,10.09-.83,15.1-1.15a3.06,3.06,0,0,1,3.24,2.81h0a3,3,0,0,1-.73,2.21A3.08,3.08,0,0,1,119.12,57c-4.85.48-10.18.88-15.05,1.14Zm-2.16-14.59a3.06,3.06,0,0,1-3.78-2.11v0a3,3,0,0,1,.27-2.3,3.1,3.1,0,0,1,1.83-1.46c5.21-1.37,10.4-3.05,15.61-4.45a3,3,0,0,1,2.3.27,3.08,3.08,0,0,1,1.45,1.8v0a3.07,3.07,0,0,1-2.1,3.78l-15.59,4.45Zm-6.3-14.32a3.05,3.05,0,0,1-4.09-1.37,3,3,0,0,1-.17-2.33,3.09,3.09,0,0,1,1.53-1.77l15-7.49a3,3,0,0,1,4.09,1.37,3,3,0,0,1,.16,2.33,3.07,3.07,0,0,1-1.53,1.76l-15,7.5ZM58.75,12c.13-.15.27-.29.4-.42a4.46,4.46,0,0,1,1.48-1.11h0a3.58,3.58,0,0,1,2-.08c2.25.36,4.66,2,7.11,4.51,6,6.19,12.32,18,16.82,30.41s7.2,25.36,5.85,33.77c-.51,3.13-1.57,5.66-3.31,7.33l-.09.07a5.64,5.64,0,0,1-2.47,1,2.43,2.43,0,0,0-.25-.2C80.3,83,75,75.9,70.54,67.55c1.14.22,2.6-.63,4-2.08,7-7.38,3.56-20.28-5.17-23.27C65.81,41,62.27,41,60.87,41.69l-.15.08C57.52,29.42,56.61,18,58.75,12Z"/></svg>
+            </button>
+        </div>
+        <div id="abas">
+            <div id="topBar">
+                <button class="btMenu" onclick="abrirM()">
+                    <svg class="icons" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 95.95" style="enable-background:new 0 0 122.88 95.95" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><path fill="currentColor" class="st0" d="M8.94,0h105c4.92,0,8.94,4.02,8.94,8.94l0,0c0,4.92-4.02,8.94-8.94,8.94h-105C4.02,17.88,0,13.86,0,8.94l0,0 C0,4.02,4.02,0,8.94,0L8.94,0z M8.94,78.07h105c4.92,0,8.94,4.02,8.94,8.94l0,0c0,4.92-4.02,8.94-8.94,8.94h-105 C4.02,95.95,0,91.93,0,87.01l0,0C0,82.09,4.02,78.07,8.94,78.07L8.94,78.07z M8.94,39.03h105c4.92,0,8.94,4.02,8.94,8.94l0,0 c0,4.92-4.02,8.94-8.94,8.94h-105C4.02,56.91,0,52.89,0,47.97l0,0C0,43.06,4.02,39.03,8.94,39.03L8.94,39.03z"/></g></svg>
+                </button>
+                <h1 class="title">UNIVERSO HOYOL</h1>
+            </div>
+            <h4 id="telaA">Início</h4>
+            <div class="contB" id="inicio">
+                <h2 class="titleCont">Seja bem-vindo(a) ao UNIVERSO HOYOL</h2>
+                <p class="pCont">Aqui, você pode acempanhar as novidades e os projetos da HOYOL.</p>
+                <h2 class="titleCont">Eventos</h2>
+                <div class="sBar">
+                    <div class="barCont">
+                        <svg width="100%"
+                            height="140px"
+                            viewBox="0 0 132.29167 132.29167"
+                            version="1.1"
+                            id="svg1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:svg="http://www.w3.org/2000/svg">
+                            <defs
+                                id="defs1" />
+                            <g
+                                id="layer1">
+                                <g
+                                id="g3">
+                                <g
+                                    id="g2"
+                                    transform="translate(5.3311326,-12.077789)">
+                                    <path
+                                    style="fill:#d6d6f9;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583"
+                                    id="path1"
+                                    d="m 65.557827,41.017309 c 1.019839,0.769401 0.952567,2.287528 0.158892,3.190001 -1.114848,1.267673 -3.103773,1.144561 -4.273188,0.02618 -1.519906,-1.453572 -1.338904,-3.923061 0.106526,-5.356376 1.789386,-1.774389 4.743921,-1.53453 6.439564,0.239235 2.030158,2.123691 1.730927,5.565709 -0.371945,7.522752 -2.457118,2.286724 -6.388092,1.92782 -8.60594,-0.504654 -2.543817,-2.789989 -2.125052,-7.210882 0.637364,-9.689128 3.122487,-2.801277 8.033961,-2.322523 10.772316,0.770073 3.059001,3.454722 2.52017,8.857254 -0.902783,11.855504 -3.786765,3.316922 -9.680709,2.717951 -12.938692,-1.035492 -3.574994,-4.118665 -2.915834,-10.504291 1.168202,-14.02188 4.450452,-3.833183 11.327973,-3.113798 15.105067,1.300911 4.091467,4.782152 3.311829,12.151736 -1.43362,16.188256 -5.113781,4.349826 -12.975564,3.509911 -17.271443,-1.56633 -2.283349,-2.698129 -3.34214,-6.299917 -2.927148,-9.80597"
+                                    transform="matrix(0.30029338,-0.68955389,0.73564192,0.32036423,54.13936,108.33979)" />
+                                    <text
+                                    xml:space="preserve"
+                                    style="font-weight:bold;font-size:24.4791px;font-family:Calibri;-inkscape-font-specification:'Calibri, Bold';fill:#d6d6f9;fill-opacity:1;stroke-width:3.82371;paint-order:markers fill stroke"
+                                    x="6.0291033"
+                                    y="84.702286"
+                                    id="text1"
+                                    transform="scale(0.98497725,1.0152519)"><tspan
+                                        id="tspan1"
+                                        style="fill:#d6d6f9;fill-opacity:1;stroke-width:3.82371"
+                                        x="6.0291033"
+                                        y="84.702286">UNIVERS</tspan></text>
+                                </g>
+                                <text
+                                    xml:space="preserve"
+                                    style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:15.0785px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#d6d6f9;fill-opacity:1;stroke-width:2.35531;paint-order:markers fill stroke"
+                                    x="43.729137"
+                                    y="87.088364"
+                                    id="text2"
+                                    transform="scale(1.0148765,0.98534158)"><tspan
+                                    id="tspan2"
+                                    style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:15.0785px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.35531"
+                                    x="43.729137"
+                                    y="87.088364">HOYOL</tspan></text>
+                                </g>
+                            </g>
+                        </svg>
+
+                        <h2 class="titleSimple">Inalgurando o UNIVERSO HOYOL</h2>
+                        <p class="pSimple">Inalguramos o novo "UNIVERSO HOYOL", aqui, sera o novo universo da HOYOL, postaremos novidades sobre os nossos futuros e atuais projetos, além de eventos que pode ocorrer ao longo do ano. fique por dentro e sempre dê uma olhada no site para você não perder nada.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contB" id="projetos">
+                <h2 class="titleCont">Projetos da HOYOL</h2>
+                <p class="pCont">Veja os nossos projetos.</p>
+                <div id="projetosB">
+                    <div class="barP">
+                        <h2 class="titleSimple">HOYOL-LIST (Beta)</h2>
+                        <p class="pSimple">O site de lista da HOYOL, se organize e crie listas.</p>
+                        <button class="btAcss" onclick="linkP('https://luquinhasamc.github.io/HOYOL-LIST/')">
+                            Acessar o site do projeto
+                        </button>
+                    </div>
+                    <div class="barP">
+                        <h2 class="titleSimple">HOYOL DOCS (Beta)</h2>
+                        <p class="pSimple">Crie documentos de maneira simples sem complicações com o HOYOL DOCS.</p>
+                        <button class="btAcss" onclick="linkP('https://luquinhasamc.github.io/HOYOL_DOCS/')">
+                            Acessar o site do projeto
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="contB" id="novidades">
+                <h2 class="titleCont">Novidades da HOYOL</h2>
+                <p class="pCont">Novidades sera atualizado em-breve</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
